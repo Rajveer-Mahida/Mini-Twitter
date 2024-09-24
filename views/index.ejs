@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="w-full min-h-screen bg-zinc-900 text-white p-10">
+      <div class="flex justify-between items-center mb-2">
+        <h3 class="text-3xl font-bold mb-5">Create Account</h3>
+        <a href="/login " class="bg-blue-500 rounded-lg px-4 py-2">Login</a>
+      </div>
+      <form method="post" action="/register">
+        <input
+          class="px-3 py-2 outline-none bg-transparent border-2 border-zinc-800 rounded-md"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+        />
+        <input
+          class="px-3 py-2 outline-none bg-transparent border-2 border-zinc-800 rounded-md"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username"
+        />
+        <input
+          class="px-3 py-2 outline-none bg-transparent border-2 border-zinc-800 rounded-md"
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Email"
+        />
+        <input
+          class="px-3 py-2 outline-none bg-transparent border-2 border-zinc-800 rounded-md"
+          type="text"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+        <input
+          class="px-3 py-2 outline-none bg-transparent border-2 border-zinc-800 rounded-md"
+          type="number"
+          name="age"
+          id="age"
+          placeholder="Age"
+        />
+
+        <div class="flex gap-4 mt-5 ">
+          <input
+            class="px-3 py-2 bg-blue-500 rounded-md"
+            type="submit"
+            value="Create Account"
+          />
+          <input class="px-3 py-2 bg-red-500 rounded-md" type="button"
+          value="Clear"
+          onclick="document.getElementById('name').value='';document.getElementById('username').value='';document.getElementById('email').value='';document.getElementById('password').value='';document.getElementById('age').value='';"
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
